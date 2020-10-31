@@ -10,6 +10,26 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  margin: auto 0;
   width: 90vw;
+
+  @media (min-width: 700px) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.2rem;
+  }
+
+  @media (min-width: 1100px) {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.2rem;
+  }
+
+  @media (min-width: 1600px) {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3.2rem;
+  }
 `;

@@ -10,8 +10,13 @@ export const Container = styled.div`
   background: #fff;
 
   height: 42rem;
-  margin: 2.4rem 0;
   border-radius: 0.8rem;
+
+  margin-top: 2.4rem;
+
+  @media (min-width: 700px) {
+    margin: 0;
+  }
 `;
 
 export const ImageContainer = styled.div<ImageContainerProps>`
