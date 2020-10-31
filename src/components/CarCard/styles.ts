@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-import CarImg from '../../assets/volkswagen-fox.jpg';
+interface ImageContainerProps {
+  image: string;
+}
 
 export const Container = styled.div`
   display: flex;
@@ -12,9 +14,9 @@ export const Container = styled.div`
   border-radius: 0.8rem;
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<ImageContainerProps>`
   flex: 1;
-  background: url(${CarImg}) no-repeat center;
+  background: url(${props => props.image}) no-repeat center;
   border-radius: 0.8rem 0.8rem 0 0;
 
   position: relative;

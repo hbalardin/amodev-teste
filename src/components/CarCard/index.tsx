@@ -11,24 +11,32 @@ import {
   ContentFooter,
 } from './styles';
 
-const CarCard = (): JSX.Element => {
+interface Props {
+  name: string;
+  year: string;
+  km: string;
+  price: string;
+  image: string;
+}
+
+const CarCard = ({ name, year, km, price, image }: Props): JSX.Element => {
   return (
     <Container>
-      <ImageContainer>
+      <ImageContainer image={image}>
         <button type="button">
           <img src={BookmarkIcon} alt="bookmark" />
         </button>
       </ImageContainer>
       <CardContent>
         <ContentHeader>
-          <p>VOLKSWAGEN FOX</p>
-          <strong>R$25.085,00</strong>
+          <p>{name}</p>
+          <strong>{price}</strong>
         </ContentHeader>
         <ContentFooter>
-          <p>2011</p>
+          <p>{year}</p>
           <span>
             <img src={SpeedometerIcon} alt="speedometer" />
-            <p>131313 Km</p>
+            <p>{`${km} Km`}</p>
           </span>
           <p>Gasolina</p>
         </ContentFooter>
