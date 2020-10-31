@@ -12,14 +12,14 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 90vw;
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3.2rem;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1200px) {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);

@@ -22,6 +22,7 @@ export const Container = styled.div`
 export const ImageContainer = styled.div<ImageContainerProps>`
   flex: 1;
   background: url(${props => props.image}) no-repeat center;
+  background-size: cover;
   border-radius: 0.8rem 0.8rem 0 0;
 
   position: relative;

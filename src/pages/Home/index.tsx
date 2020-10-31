@@ -3,7 +3,8 @@ import CarCard from '../../components/CarCard';
 
 import { Container, Content } from './styles';
 
-import CarImg from '../../assets/volkswagen-fox.jpg';
+import FoxImg from '../../assets/volkswagen-fox.jpg';
+import GolImg from '../../assets/volkswagen-gol.jpg';
 
 const Home = (): JSX.Element => {
   return (
@@ -14,91 +15,56 @@ const Home = (): JSX.Element => {
           year="2011"
           km="131313"
           price="R$25.080,00"
-          image={CarImg}
+          image={FoxImg}
         />
         <CarCard
           name="VOLKSWAGEN GOL"
           year="2012"
           km="151501"
           price="R$20.080,00"
-          image={CarImg}
+          image={GolImg}
         />
         <CarCard
           name="VOLKSWAGEN FOX"
           year="2011"
           km="131313"
           price="R$25.080,00"
-          image={CarImg}
+          image={FoxImg}
         />
         <CarCard
           name="VOLKSWAGEN GOL"
           year="2012"
           km="151501"
           price="R$20.080,00"
-          image={CarImg}
+          image={GolImg}
         />
         <CarCard
           name="VOLKSWAGEN FOX"
           year="2011"
           km="131313"
           price="R$25.080,00"
-          image={CarImg}
+          image={FoxImg}
         />
         <CarCard
           name="VOLKSWAGEN GOL"
           year="2012"
           km="151501"
           price="R$20.080,00"
-          image={CarImg}
+          image={GolImg}
         />
         <CarCard
           name="VOLKSWAGEN FOX"
           year="2011"
           km="131313"
           price="R$25.080,00"
-          image={CarImg}
+          image={FoxImg}
         />
         <CarCard
           name="VOLKSWAGEN GOL"
           year="2012"
           km="151501"
           price="R$20.080,00"
-          image={CarImg}
-        />
-        <CarCard
-          name="VOLKSWAGEN FOX"
-          year="2011"
-          km="131313"
-          price="R$25.080,00"
-          image={CarImg}
-        />
-        <CarCard
-          name="VOLKSWAGEN GOL"
-          year="2012"
-          km="151501"
-          price="R$20.080,00"
-          image={CarImg}
-        />
-        <CarCard
-          name="VOLKSWAGEN FOX"
-          year="2011"
-          km="131313"
-          price="R$25.080,00"
-          image={CarImg}
-        />
-        <CarCard
-          name="VOLKSWAGEN GOL"
-          year="2012"
-          km="151501"
-          price="R$20.080,00"
-          image={CarImg}
-        />
-        <CarCard
-          name="VOLKSWAGEN FOX"
-          year="2011"
-          km="131313"
-          price="R$25.080,00"
-          image={CarImg}
+          image={GolImg}
         />
       </Content>
     </Container>
